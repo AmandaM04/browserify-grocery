@@ -1,19 +1,14 @@
-const loadDepartments = require('./departments');
-const printToDom = require('./dom');
+let departments = [];
 
-const showOnLoad = function () {
-  const data = JSON.parse(this.responseText).departments;
-  printToDom(data);
+const getDepartments = () => {
+  return departments;
 };
 
-const noLoad = function () {
-  console.log('Nothing To See Here');
-};
-
-const success = () => {
-  loadDepartments(showOnLoad, noLoad);
+const setDepartments = (departmentsArray) => {
+  departments = departmentsArray;
 };
 
 module.exports = {
-  success,
+  getDepartments,
+  setDepartments,
 };
