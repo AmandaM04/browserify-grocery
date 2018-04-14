@@ -1,3 +1,3 @@
-const data = require('./data');
+const dataGatekeeper = require('./dataGatekeeper');
 
-data.success();
+dataGatekeeper.success();
