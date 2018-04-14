@@ -1,4 +1,4 @@
-const loadDepartments = (loadFunction, errorFunction) => {
+const allDepartmentsLoad = (loadFunction, errorFunction) => {
   const myRequest = new XMLHttpRequest();
   myRequest.addEventListener('load', loadFunction);
   myRequest.addEventListener('error', errorFunction);
@@ -6,4 +6,4 @@ const loadDepartments = (loadFunction, errorFunction) => {
   myRequest.send();
 };
 
-module.exports = loadDepartments;
+module.exports = allDepartmentsLoad;
