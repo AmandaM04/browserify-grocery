@@ -1,9 +1,9 @@
+// const itemEvents = require('./itemsEvents');
 const itemsOutputDiv = document.getElementById('items');
 
 const itemsDomString = (items) => {
   let domString = '';
-  items.forEach(item => {
-
+  items.forEach((item) => {
     domString += `<div class="col-sm-3 text-center item">`;
     domString +=   `<div class="panel panel-info">`;
     domString +=     `<div class="panel-heading">`;
