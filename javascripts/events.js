@@ -2,6 +2,7 @@ const departmentContainerDiv = document.getElementById('departments');
 const departmentCards = document.getElementsByClassName('department');
 const data = require('./data');
 const itemsDom = require('./itemsDom');
+console.log('itemsDom', itemsDom);
 
 const showDepartmentName = (e) => {
   const departmentImg = e.target.children[1];
