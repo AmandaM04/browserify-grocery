@@ -24,3 +24,14 @@ body {
     left: 40px;
     z-index: 4;
 }
+
+/* Item */
+
+.item-image {
+  height: 100px;
+  width: 100px;
+}
+
+.item {
+  height: 300px;
+}
