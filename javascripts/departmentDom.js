@@ -14,7 +14,6 @@ const domString = (departmentArray) => {
 
 const printDepartmentToDom = (departmentArray) => {
   outputDiv.innerHTML = domString(departmentArray);
-  console.log(events);
   events.addDepartmentEvents();
 };
 

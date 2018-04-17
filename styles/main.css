@@ -1,5 +1,5 @@
 body {
-    background-color: aliceblue;
+    background-color: green;
 }
 
 /* DEPARTMENT STYLES */
@@ -23,4 +23,15 @@ body {
     font-size: 50px;
     left: 40px;
     z-index: 4;
+}
+
+/* Item */
+
+.item-image {
+  height: 100px;
+  width: 100px;
+}
+
+.item {
+  height: 300px;
 }

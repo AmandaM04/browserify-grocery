@@ -1,4 +1,7 @@
+const departmentContainerDiv = document.getElementById('departments');
 const departmentCards = document.getElementsByClassName('department');
+const data = require('./data');
+const itemsDom = require('./itemsDom');
 
 const showDepartmentName = (e) => {
   const departmentImg = e.target.children[1];
@@ -18,7 +21,9 @@ const hideDepartmentName = (e) => {
 
 const showItems = (e) => {
   const departmentId = e.target.parentNode.children[0].dataset.departmentId;
-  console.log('e', departmentId);
+  const selectedItems = data.getItemsByDepartmentId(departmentId);
+  departmentContainerDiv.innerHTML = '';
+  itemsDom(selectedItems);
 };
 
 const addDepartmentEvents = () => {
