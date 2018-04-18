@@ -28,6 +28,10 @@ const getItemsByDepartmentId = (departmentId) => {
   return selectedItems;
 };
 
+const getCart = () => {
+  return cart;
+};
+
 const setCart = (itemId, numberToAdd) => {
   const itemPosition = items.map(function (item) {
     return item.id;
@@ -45,4 +49,5 @@ module.exports = {
   setItems,
   getItemsByDepartmentId,
   setCart,
+  getCart,
 };
